@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="company">
+    <Key>
+      <PropertyRef Name="company_id" />
+    </Key>
+    <Property Name="company_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="company_name" Type="varchar" MaxLength="200" />
+    <Property Name="file_name" Type="varchar" MaxLength="200" />
+    <Property Name="data" Type="image" />
+  </EntityType>
+  <EntityType Name="contacts">
+    <Key>
+      <PropertyRef Name="contact_id" />
+    </Key>
+    <Property Name="contact_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fname" Type="varchar" MaxLength="150" />
+    <Property Name="lname" Type="varchar" MaxLength="150" />
+    <Property Name="mname" Type="varchar" MaxLength="150" />
+    <Property Name="email" Type="varchar" MaxLength="150" />
+    <Property Name="mobile" Type="varchar" MaxLength="150" />
+    <Property Name="phone" Type="varchar" MaxLength="150" />
+    <Property Name="website" Type="varchar" MaxLength="150" />
+    <Property Name="address1" Type="varchar" MaxLength="150" />
+    <Property Name="address2" Type="varchar" MaxLength="150" />
+    <Property Name="des" Type="varchar" MaxLength="300" />
+    <Property Name="other" Type="varchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="events">
+    <Key>
+      <PropertyRef Name="event_id" />
+    </Key>
+    <Property Name="event_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="topic" Type="varchar" MaxLength="250" />
+    <Property Name="type" Type="varchar" MaxLength="250" />
+    <Property Name="status" Type="varchar" MaxLength="250" />
+    <Property Name="des" Type="varchar" MaxLength="250" />
+    <Property Name="start_date" Type="varchar" MaxLength="250" />
+    <Property Name="start_time" Type="varchar" MaxLength="250" />
+    <Property Name="end_date" Type="varchar" MaxLength="250" />
+    <Property Name="end_time" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="leads">
+    <Key>
+      <PropertyRef Name="lead_id" />
+    </Key>
+    <Property Name="lead_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fname" Type="varchar" MaxLength="150" />
+    <Property Name="lname" Type="varchar" MaxLength="150" />
+    <Property Name="mname" Type="varchar" MaxLength="150" />
+    <Property Name="sales_person" Type="varchar" MaxLength="200" />
+    <Property Name="dep" Type="varchar" MaxLength="200" />
+    <Property Name="comp" Type="varchar" MaxLength="200" />
+    <Property Name="industry" Type="varchar" MaxLength="200" />
+    <Property Name="lead_source" Type="varchar" MaxLength="200" />
+    <Property Name="lead_status" Type="varchar" MaxLength="200" />
+    <Property Name="no_empl" Type="int" />
+    <Property Name="revenue" Type="varchar" MaxLength="200" />
+    <Property Name="des" Type="varchar" MaxLength="250" />
+    <Property Name="referred" Type="varchar" MaxLength="200" />
+    <Property Name="address1" Type="varchar" MaxLength="200" />
+    <Property Name="address2" Type="varchar" MaxLength="200" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="mobile" Type="varchar" MaxLength="100" />
+    <Property Name="phone" Type="varchar" MaxLength="100" />
+    <Property Name="website" Type="varchar" MaxLength="200" />
+    <Property Name="other" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="tasks">
+    <Key>
+      <PropertyRef Name="task_id" />
+    </Key>
+    <Property Name="task_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="task_name" Type="varchar" MaxLength="250" />
+    <Property Name="status" Type="varchar" MaxLength="250" />
+    <Property Name="refer_type" Type="varchar" MaxLength="250" />
+    <Property Name="refer_name" Type="varchar" MaxLength="250" />
+    <Property Name="priority" Type="varchar" MaxLength="250" />
+    <Property Name="des" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <Function Name="LeadStatusProcedure" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="DatabaseModelStoreContainer">
+    <EntitySet Name="company" EntityType="Self.company" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="contacts" EntityType="Self.contacts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="events" EntityType="Self.events" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="leads" EntityType="Self.leads" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tasks" EntityType="Self.tasks" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

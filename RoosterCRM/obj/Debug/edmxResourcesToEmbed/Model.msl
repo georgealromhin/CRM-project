@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DatabaseModelStoreContainer" CdmEntityContainer="DatabaseEntities">
+    <EntitySetMapping Name="contacts">
+      <EntityTypeMapping TypeName="DatabaseModel.contact">
+        <MappingFragment StoreEntitySet="contacts">
+          <ScalarProperty Name="contact_id" ColumnName="contact_id" />
+          <ScalarProperty Name="fname" ColumnName="fname" />
+          <ScalarProperty Name="lname" ColumnName="lname" />
+          <ScalarProperty Name="mname" ColumnName="mname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="website" ColumnName="website" />
+          <ScalarProperty Name="address1" ColumnName="address1" />
+          <ScalarProperty Name="address2" ColumnName="address2" />
+          <ScalarProperty Name="des" ColumnName="des" />
+          <ScalarProperty Name="other" ColumnName="other" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="events">
+      <EntityTypeMapping TypeName="DatabaseModel.event">
+        <MappingFragment StoreEntitySet="events">
+          <ScalarProperty Name="event_id" ColumnName="event_id" />
+          <ScalarProperty Name="topic" ColumnName="topic" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="des" ColumnName="des" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="start_time" ColumnName="start_time" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="end_time" ColumnName="end_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="leads">
+      <EntityTypeMapping TypeName="DatabaseModel.lead">
+        <MappingFragment StoreEntitySet="leads">
+          <ScalarProperty Name="lead_id" ColumnName="lead_id" />
+          <ScalarProperty Name="fname" ColumnName="fname" />
+          <ScalarProperty Name="lname" ColumnName="lname" />
+          <ScalarProperty Name="mname" ColumnName="mname" />
+          <ScalarProperty Name="sales_person" ColumnName="sales_person" />
+          <ScalarProperty Name="dep" ColumnName="dep" />
+          <ScalarProperty Name="comp" ColumnName="comp" />
+          <ScalarProperty Name="industry" ColumnName="industry" />
+          <ScalarProperty Name="lead_source" ColumnName="lead_source" />
+          <ScalarProperty Name="lead_status" ColumnName="lead_status" />
+          <ScalarProperty Name="no_empl" ColumnName="no_empl" />
+          <ScalarProperty Name="revenue" ColumnName="revenue" />
+          <ScalarProperty Name="des" ColumnName="des" />
+          <ScalarProperty Name="referred" ColumnName="referred" />
+          <ScalarProperty Name="address1" ColumnName="address1" />
+          <ScalarProperty Name="address2" ColumnName="address2" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="website" ColumnName="website" />
+          <ScalarProperty Name="other" ColumnName="other" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tasks">
+      <EntityTypeMapping TypeName="IsTypeOf(DatabaseModel.task)">
+        <MappingFragment StoreEntitySet="tasks">
+          <ScalarProperty Name="task_name" ColumnName="task_name" />
+          <ScalarProperty Name="task_id" ColumnName="task_id" />
+          <ScalarProperty Name="des" ColumnName="des" />
+          <ScalarProperty Name="priority" ColumnName="priority" />
+          <ScalarProperty Name="refer_name" ColumnName="refer_name" />
+          <ScalarProperty Name="refer_type" ColumnName="refer_type" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="LeadStatusPRocedure" FunctionName="DatabaseModel.Store.LeadStatusProcedure" />
+    <EntitySetMapping Name="companies">
+      <EntityTypeMapping TypeName="DatabaseModel.company">
+        <MappingFragment StoreEntitySet="company">
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="file_name" ColumnName="file_name" />
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="contact">
+    <Key>
+      <PropertyRef Name="contact_id" />
+    </Key>
+    <Property Name="contact_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fname" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="lname" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="mname" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="mobile" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="phone" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="website" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="address1" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="address2" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="des" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="other" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="event">
+    <Key>
+      <PropertyRef Name="event_id" />
+    </Key>
+    <Property Name="event_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="topic" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="type" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="status" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="des" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="start_date" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="start_time" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="end_date" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="end_time" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="lead">
+    <Key>
+      <PropertyRef Name="lead_id" />
+    </Key>
+    <Property Name="lead_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fname" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="lname" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="mname" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="sales_person" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="dep" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="comp" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="industry" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="lead_source" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="lead_status" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="no_empl" Type="Int32" />
+    <Property Name="revenue" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="des" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="referred" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="address1" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="address2" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="mobile" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="phone" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="website" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="other" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="task">
+    <Key>
+      <PropertyRef Name="task_id" />
+    </Key>
+    <Property Name="task_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="task_name" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="status" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="refer_type" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="refer_name" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="priority" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="des" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="DatabaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="contacts" EntityType="Self.contact" />
+    <EntitySet Name="events" EntityType="Self.event" />
+    <EntitySet Name="leads" EntityType="Self.lead" />
+    <EntitySet Name="tasks" EntityType="Self.task" />
+    <FunctionImport Name="LeadStatusPRocedure" />
+    <EntitySet Name="companies" EntityType="DatabaseModel.company" />
+  </EntityContainer>
+  <ComplexType Name="LeadStatusProcedure_Result">
+    <Property Type="String" Name="lead_status" Nullable="true" MaxLength="200" />
+    <Property Type="Int32" Name="Column1" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="company">
+    <Key>
+      <PropertyRef Name="company_id" />
+    </Key>
+    <Property Name="company_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="company_name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="file_name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,105 @@
+C:\Users\George\source\RoosterCRM\RoosterCRM\bin\Debug\Database.mdf
+C:\Users\George\source\RoosterCRM\RoosterCRM\bin\Debug\Database_log.ldf
+C:\Users\George\source\RoosterCRM\RoosterCRM\bin\Debug\RoosterCRM.exe.config
+C:\Users\George\source\RoosterCRM\RoosterCRM\bin\Debug\RoosterCRM.exe
+C:\Users\George\source\RoosterCRM\RoosterCRM\bin\Debug\RoosterCRM.pdb
+C:\Users\George\source\RoosterCRM\RoosterCRM\bin\Debug\EntityFramework.dll
+C:\Users\George\source\RoosterCRM\RoosterCRM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\George\source\RoosterCRM\RoosterCRM\bin\Debug\itextsharp.dll
+C:\Users\George\source\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.dll
+C:\Users\George\source\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\George\source\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\George\source\RoosterCRM\RoosterCRM\bin\Debug\EntityFramework.xml
+C:\Users\George\source\RoosterCRM\RoosterCRM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\George\source\RoosterCRM\RoosterCRM\bin\Debug\itextsharp.xml
+C:\Users\George\source\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.pdb
+C:\Users\George\source\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.xml
+C:\Users\George\source\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\George\source\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\George\source\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\George\source\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\George\source\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.csprojAssemblyReference.cache
+C:\Users\George\source\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.AboutBox1.resources
+C:\Users\George\source\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.AddEditContactForm.resources
+C:\Users\George\source\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.AddEditEventForm.resources
+C:\Users\George\source\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.AddEditLeadForm.resources
+C:\Users\George\source\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.AddEditTaskForm.resources
+C:\Users\George\source\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.MailForm.resources
+C:\Users\George\source\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.MainForm.resources
+C:\Users\George\source\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.Properties.Resources.resources
+C:\Users\George\source\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.SettingsForm.resources
+C:\Users\George\source\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.csproj.GenerateResource.cache
+C:\Users\George\source\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.csproj.CoreCompileInputs.cache
+C:\Users\George\source\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.csproj.CopyComplete
+C:\Users\George\source\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.exe
+C:\Users\George\source\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.pdb
+F:\HDD 1TB\RoosterCRM\RoosterCRM\bin\Debug\Database.mdf
+F:\HDD 1TB\RoosterCRM\RoosterCRM\bin\Debug\Database_log.ldf
+F:\HDD 1TB\RoosterCRM\RoosterCRM\bin\Debug\RoosterCRM.exe.config
+F:\HDD 1TB\RoosterCRM\RoosterCRM\bin\Debug\RoosterCRM.exe
+F:\HDD 1TB\RoosterCRM\RoosterCRM\bin\Debug\RoosterCRM.pdb
+F:\HDD 1TB\RoosterCRM\RoosterCRM\bin\Debug\EntityFramework.dll
+F:\HDD 1TB\RoosterCRM\RoosterCRM\bin\Debug\EntityFramework.SqlServer.dll
+F:\HDD 1TB\RoosterCRM\RoosterCRM\bin\Debug\itextsharp.dll
+F:\HDD 1TB\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.dll
+F:\HDD 1TB\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.WinForms.dll
+F:\HDD 1TB\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.Wpf.dll
+F:\HDD 1TB\RoosterCRM\RoosterCRM\bin\Debug\EntityFramework.xml
+F:\HDD 1TB\RoosterCRM\RoosterCRM\bin\Debug\EntityFramework.SqlServer.xml
+F:\HDD 1TB\RoosterCRM\RoosterCRM\bin\Debug\itextsharp.xml
+F:\HDD 1TB\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.pdb
+F:\HDD 1TB\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.xml
+F:\HDD 1TB\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.WinForms.pdb
+F:\HDD 1TB\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.WinForms.xml
+F:\HDD 1TB\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.Wpf.pdb
+F:\HDD 1TB\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.Wpf.xml
+F:\HDD 1TB\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.csprojAssemblyReference.cache
+F:\HDD 1TB\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.AboutBox1.resources
+F:\HDD 1TB\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.AddEditContactForm.resources
+F:\HDD 1TB\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.AddEditEventForm.resources
+F:\HDD 1TB\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.AddEditLeadForm.resources
+F:\HDD 1TB\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.AddEditTaskForm.resources
+F:\HDD 1TB\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.MailForm.resources
+F:\HDD 1TB\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.MainForm.resources
+F:\HDD 1TB\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.Properties.Resources.resources
+F:\HDD 1TB\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.SettingsForm.resources
+F:\HDD 1TB\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.csproj.GenerateResource.cache
+F:\HDD 1TB\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.csproj.CoreCompileInputs.cache
+F:\HDD 1TB\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.csproj.CopyComplete
+F:\HDD 1TB\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.exe
+F:\HDD 1TB\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.pdb
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\bin\Debug\Database.mdf
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\bin\Debug\Database_log.ldf
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\bin\Debug\RoosterCRM.exe.config
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\bin\Debug\RoosterCRM.exe
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\bin\Debug\RoosterCRM.pdb
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\bin\Debug\EntityFramework.dll
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\bin\Debug\itextsharp.dll
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.dll
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\bin\Debug\EntityFramework.xml
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\bin\Debug\itextsharp.xml
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.pdb
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.xml
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.csprojAssemblyReference.cache
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.AboutBox1.resources
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.AddEditContactForm.resources
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.AddEditEventForm.resources
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.AddEditLeadForm.resources
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.AddEditTaskForm.resources
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.MailForm.resources
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.MainForm.resources
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.Properties.Resources.resources
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.SettingsForm.resources
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.csproj.GenerateResource.cache
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.csproj.CoreCompileInputs.cache
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.csproj.CopyComplete
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.exe
+C:\Users\George\Desktop\RoosterCRM\RoosterCRM\obj\Debug\RoosterCRM.pdb
