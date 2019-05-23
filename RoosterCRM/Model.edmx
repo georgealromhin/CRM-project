@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="company">
+          <Key>
+            <PropertyRef Name="company_id" />
+          </Key>
+          <Property Name="company_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="company_name" Type="varchar" MaxLength="200" />
+          <Property Name="file_name" Type="varchar" MaxLength="200" />
+          <Property Name="data" Type="image" />
+        </EntityType>
+        <EntityType Name="contacts">
+          <Key>
+            <PropertyRef Name="contact_id" />
+          </Key>
+          <Property Name="contact_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="fname" Type="varchar" MaxLength="150" />
+          <Property Name="lname" Type="varchar" MaxLength="150" />
+          <Property Name="mname" Type="varchar" MaxLength="150" />
+          <Property Name="email" Type="varchar" MaxLength="150" />
+          <Property Name="mobile" Type="varchar" MaxLength="150" />
+          <Property Name="phone" Type="varchar" MaxLength="150" />
+          <Property Name="website" Type="varchar" MaxLength="150" />
+          <Property Name="address1" Type="varchar" MaxLength="150" />
+          <Property Name="address2" Type="varchar" MaxLength="150" />
+          <Property Name="des" Type="varchar" MaxLength="300" />
+          <Property Name="other" Type="varchar" MaxLength="300" />
+        </EntityType>
+        <EntityType Name="events">
+          <Key>
+            <PropertyRef Name="event_id" />
+          </Key>
+          <Property Name="event_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="topic" Type="varchar" MaxLength="250" />
+          <Property Name="type" Type="varchar" MaxLength="250" />
+          <Property Name="status" Type="varchar" MaxLength="250" />
+          <Property Name="des" Type="varchar" MaxLength="250" />
+          <Property Name="start_date" Type="varchar" MaxLength="250" />
+          <Property Name="start_time" Type="varchar" MaxLength="250" />
+          <Property Name="end_date" Type="varchar" MaxLength="250" />
+          <Property Name="end_time" Type="varchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="leads">
+          <Key>
+            <PropertyRef Name="lead_id" />
+          </Key>
+          <Property Name="lead_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="fname" Type="varchar" MaxLength="150" />
+          <Property Name="lname" Type="varchar" MaxLength="150" />
+          <Property Name="mname" Type="varchar" MaxLength="150" />
+          <Property Name="sales_person" Type="varchar" MaxLength="200" />
+          <Property Name="dep" Type="varchar" MaxLength="200" />
+          <Property Name="comp" Type="varchar" MaxLength="200" />
+          <Property Name="industry" Type="varchar" MaxLength="200" />
+          <Property Name="lead_source" Type="varchar" MaxLength="200" />
+          <Property Name="lead_status" Type="varchar" MaxLength="200" />
+          <Property Name="no_empl" Type="int" />
+          <Property Name="revenue" Type="varchar" MaxLength="200" />
+          <Property Name="des" Type="varchar" MaxLength="250" />
+          <Property Name="referred" Type="varchar" MaxLength="200" />
+          <Property Name="address1" Type="varchar" MaxLength="200" />
+          <Property Name="address2" Type="varchar" MaxLength="200" />
+          <Property Name="email" Type="varchar" MaxLength="100" />
+          <Property Name="mobile" Type="varchar" MaxLength="100" />
+          <Property Name="phone" Type="varchar" MaxLength="100" />
+          <Property Name="website" Type="varchar" MaxLength="200" />
+          <Property Name="other" Type="varchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="tasks">
+          <Key>
+            <PropertyRef Name="task_id" />
+          </Key>
+          <Property Name="task_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="task_name" Type="varchar" MaxLength="250" />
+          <Property Name="status" Type="varchar" MaxLength="250" />
+          <Property Name="refer_type" Type="varchar" MaxLength="250" />
+          <Property Name="refer_name" Type="varchar" MaxLength="250" />
+          <Property Name="priority" Type="varchar" MaxLength="250" />
+          <Property Name="des" Type="varchar" MaxLength="250" />
+        </EntityType>
+        <Function Name="LeadStatusProcedure" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="DatabaseModelStoreContainer">
+          <EntitySet Name="company" EntityType="Self.company" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="contacts" EntityType="Self.contacts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="events" EntityType="Self.events" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="leads" EntityType="Self.leads" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tasks" EntityType="Self.tasks" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="contact">
+          <Key>
+            <PropertyRef Name="contact_id" />
+          </Key>
+          <Property Name="contact_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fname" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="lname" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="mname" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="mobile" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="phone" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="website" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="address1" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="address2" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="des" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="other" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="event">
+          <Key>
+            <PropertyRef Name="event_id" />
+          </Key>
+          <Property Name="event_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="topic" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="type" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="status" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="des" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="start_date" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="start_time" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="end_date" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="end_time" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="lead">
+          <Key>
+            <PropertyRef Name="lead_id" />
+          </Key>
+          <Property Name="lead_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fname" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="lname" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="mname" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="sales_person" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="dep" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="comp" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="industry" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="lead_source" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="lead_status" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="no_empl" Type="Int32" />
+          <Property Name="revenue" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="des" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="referred" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="address1" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="address2" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="mobile" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="phone" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="website" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="other" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="task">
+          <Key>
+            <PropertyRef Name="task_id" />
+          </Key>
+          <Property Name="task_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="task_name" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="status" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="refer_type" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="refer_name" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="priority" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="des" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="DatabaseEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="contacts" EntityType="Self.contact" />
+          <EntitySet Name="events" EntityType="Self.event" />
+          <EntitySet Name="leads" EntityType="Self.lead" />
+          <EntitySet Name="tasks" EntityType="Self.task" />
+          <FunctionImport Name="LeadStatusPRocedure" />
+          <EntitySet Name="companies" EntityType="DatabaseModel.company" />
+          </EntityContainer>
+        <ComplexType Name="LeadStatusProcedure_Result">
+          <Property Type="String" Name="lead_status" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="Column1" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="company">
+          <Key>
+            <PropertyRef Name="company_id" />
+          </Key>
+          <Property Name="company_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="company_name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="file_name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="data" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DatabaseModelStoreContainer" CdmEntityContainer="DatabaseEntities">
+          <EntitySetMapping Name="contacts">
+            <EntityTypeMapping TypeName="DatabaseModel.contact">
+              <MappingFragment StoreEntitySet="contacts">
+                <ScalarProperty Name="contact_id" ColumnName="contact_id" />
+                <ScalarProperty Name="fname" ColumnName="fname" />
+                <ScalarProperty Name="lname" ColumnName="lname" />
+                <ScalarProperty Name="mname" ColumnName="mname" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="mobile" ColumnName="mobile" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="website" ColumnName="website" />
+                <ScalarProperty Name="address1" ColumnName="address1" />
+                <ScalarProperty Name="address2" ColumnName="address2" />
+                <ScalarProperty Name="des" ColumnName="des" />
+                <ScalarProperty Name="other" ColumnName="other" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="events">
+            <EntityTypeMapping TypeName="DatabaseModel.event">
+              <MappingFragment StoreEntitySet="events">
+                <ScalarProperty Name="event_id" ColumnName="event_id" />
+                <ScalarProperty Name="topic" ColumnName="topic" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="des" ColumnName="des" />
+                <ScalarProperty Name="start_date" ColumnName="start_date" />
+                <ScalarProperty Name="start_time" ColumnName="start_time" />
+                <ScalarProperty Name="end_date" ColumnName="end_date" />
+                <ScalarProperty Name="end_time" ColumnName="end_time" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="leads">
+            <EntityTypeMapping TypeName="DatabaseModel.lead">
+              <MappingFragment StoreEntitySet="leads">
+                <ScalarProperty Name="lead_id" ColumnName="lead_id" />
+                <ScalarProperty Name="fname" ColumnName="fname" />
+                <ScalarProperty Name="lname" ColumnName="lname" />
+                <ScalarProperty Name="mname" ColumnName="mname" />
+                <ScalarProperty Name="sales_person" ColumnName="sales_person" />
+                <ScalarProperty Name="dep" ColumnName="dep" />
+                <ScalarProperty Name="comp" ColumnName="comp" />
+                <ScalarProperty Name="industry" ColumnName="industry" />
+                <ScalarProperty Name="lead_source" ColumnName="lead_source" />
+                <ScalarProperty Name="lead_status" ColumnName="lead_status" />
+                <ScalarProperty Name="no_empl" ColumnName="no_empl" />
+                <ScalarProperty Name="revenue" ColumnName="revenue" />
+                <ScalarProperty Name="des" ColumnName="des" />
+                <ScalarProperty Name="referred" ColumnName="referred" />
+                <ScalarProperty Name="address1" ColumnName="address1" />
+                <ScalarProperty Name="address2" ColumnName="address2" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="mobile" ColumnName="mobile" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="website" ColumnName="website" />
+                <ScalarProperty Name="other" ColumnName="other" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tasks">
+            <EntityTypeMapping TypeName="IsTypeOf(DatabaseModel.task)">
+              <MappingFragment StoreEntitySet="tasks">
+                <ScalarProperty Name="task_name" ColumnName="task_name" />
+                <ScalarProperty Name="task_id" ColumnName="task_id" />
+                <ScalarProperty Name="des" ColumnName="des" />
+                <ScalarProperty Name="priority" ColumnName="priority" />
+                <ScalarProperty Name="refer_name" ColumnName="refer_name" />
+                <ScalarProperty Name="refer_type" ColumnName="refer_type" />
+                <ScalarProperty Name="status" ColumnName="status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="LeadStatusPRocedure" FunctionName="DatabaseModel.Store.LeadStatusProcedure" />
+          <EntitySetMapping Name="companies">
+            <EntityTypeMapping TypeName="DatabaseModel.company">
+              <MappingFragment StoreEntitySet="company">
+                <ScalarProperty Name="data" ColumnName="data" />
+                <ScalarProperty Name="file_name" ColumnName="file_name" />
+                <ScalarProperty Name="company_name" ColumnName="company_name" />
+                <ScalarProperty Name="company_id" ColumnName="company_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
